@@ -1,5 +1,5 @@
 # Initial-Configuration-of-a-Cisco-Switch-and-Port-Security-Features
-![Network Topology](https://imgur.com/4K1jHSC)
+![Network Topology](https://imgur.com/4K1jHSC.jpg)
 
 ## SUMMARY
 As an initial setup, a router and a switch are configured with IP address information. Then, security aspects of the switch is implemented by limiting user access and ports availabilty. Finally, port security is configured on a switch's interface to mitigate threats such as spoofing attacks, application-layer attacks, Denial of Service and port scans. 
