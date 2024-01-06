@@ -6,10 +6,10 @@ As an initial setup, a router and a switch are configured with IP address inform
 
 ### IP Addresses
 | Device                   | Interface    |  IP    | Subnet | Default Gateway
-| ------------------------ | -----------  | -----  | ------
+| ------------------------ | -----------  | -----  | ------ | ---------------
 | Router4                  | FastEthernet 0/0 | 198.168.1.1 | 255.255.255.0 | -
 | Switch 1                 | VLAN 1 |192.168.1.2 | 255.255.255.0 | 192.168.1.1
-| PC1                  | - |192.168.1.252 | 255.255.255.0 | 192.168.1.1
+| PC1                      | - |192.168.1.252 | 255.255.255.0 | 192.168.1.1
 
 ## Below is a step-by-step video recorded  
 [![Watch the video]( )
