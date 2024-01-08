@@ -16,7 +16,7 @@ As an initial setup, a router and a switch are configured with IP address inform
 
 ## Step 1: Configure Initial Connectivity Settings
 
-1. 1. Issue the following commands to configure the Router4 with a host name and IP address information to the FastEthernet 0/0 interface.\
+1. Issue the following commands to configure the Router4 with a host name and IP address information to the FastEthernet 0/0 interface.\
 	***Router(config)#hostname Router4***
    
 2. See if DHCP server has been configured on Router1\
