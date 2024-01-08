@@ -12,7 +12,7 @@ As an initial setup, a router and a switch are configured with IP address inform
 | PC1                      | - |192.168.1.252 | 255.255.255.0 | 192.168.1.1
 
 ## Below is a step-by-step video recorded  
-[![Watch the video](https://youtu.be/baV2BQx7pDE)
+[![Watch the video](https://img.youtube.com/vi/baV2BQx7pDE/hqdefault.jpg)](https://youtu.be/baV2BQx7pDE)
 
 ## Step 1: Configure Initial Connectivity Settings
 
