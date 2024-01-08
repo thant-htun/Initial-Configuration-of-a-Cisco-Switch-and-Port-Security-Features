@@ -2,7 +2,7 @@
 ![Network Topology](https://imgur.com/4K1jHSC.jpg)
 
 ## SUMMARY
-As an initial setup, a router and a switch are configured with IP address information. Then, security aspects of the switch is implemented by limiting user access and ports availabilty. Finally, port security is configured on a switch's interface to mitigate threats such as spoofing attacks, application-layer attacks, Denial of Service and port scans. 
+As an initial setup, a router and a switch are configured with IP address information. Then, security aspects of the switch is implemented by limiting user access and ports availabilty. Finally, port security is configured on a switch's interface to mitigate threats such as spoofing attacks, application-layer attacks, Denial of Service and port scans. The simulation was completed in Boson NetSim CCNA 200-301. 
 
 ### IP Addresses
 | Device                   | Interface    |  IP    | Subnet | Default Gateway
@@ -12,15 +12,14 @@ As an initial setup, a router and a switch are configured with IP address inform
 | PC1                      | - |192.168.1.252 | 255.255.255.0 | 192.168.1.1
 
 ## Below is a step-by-step video recorded  
-[![Watch the video]( )
+[![Watch the video](https://youtu.be/baV2BQx7pDE)
 
-## Step 1: Configure DHCP 
-1. First, let's see the IP configuration of each PC and configure them to obtain IP addresses by using DHCP.\
-	***C:>ipconfig | C:>ipconfig /ip dhcp***
+## Step 1: Configure Initial Connectivity Settings
+
+1. 1. Issue the following commands to configure the Router4 with a host name and IP address information to the FastEthernet 0/0 interface.\
+	***Router(config)#hostname Router4***
    
 2. See if DHCP server has been configured on Router1\
 	 ***Router1#show ip dhcp pool***
    
-3. Best practice is to prevent the DHCP server from leasing IP addresses that you do not want to have conflicts later.\
-	***Router1(config)#ip dhcp excluded-address 10.10.1.1***\
-	***Router1(config)#ip dhcp excluded-address 10.10.1.11  10.10.1.12***
+
