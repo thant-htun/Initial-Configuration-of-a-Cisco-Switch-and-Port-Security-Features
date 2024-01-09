@@ -18,8 +18,15 @@ As an initial setup, a router and a switch are configured with IP address inform
 
 1. Issue the following commands to configure the Router4 with a host name and IP address information to the FastEthernet 0/0 interface.\
 	***Router(config)#hostname Router4***
+        ***Router4(config)#interface fastethernet 0/0***
+   	***Router4(config-if)#ip address 192.168.1.1 255.255.255.0***
+	***Router4(config-if)#no shutdown***
+
    
-2. See if DHCP server has been configured on Router1\
-	 ***Router1#show ip dhcp pool***
-   
+2. Configure Switch1 with a host name and assign the appropriate IP address and subnet mask to the management VLAN: \
+***Switch(config)#hostname Switch1***
+***Switch1(config)#interface vlan 1***
+***Switch1(config-if)#ip address 192.168.1.2 255.255.255.0***
+
+
 
