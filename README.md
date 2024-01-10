@@ -16,7 +16,7 @@ As an initial setup, a router and a switch are configured with IP address inform
 
 ## Step 1: Configure Initial Connectivity Settings
 
-1. Configure the Router4 with a host name and IP address information to the FastEthernet 0/0 interface.\
+1. Configure the Router4 with a host name and IP address information on FastEthernet 0/0 interface.\
    	***Router(config)#hostname Router4***\
         ***Router4(config)#interface fastethernet 0/0***\
       	***Router4(config-if)#ip address 192.168.1.1 255.255.255.0***\
@@ -28,7 +28,7 @@ As an initial setup, a router and a switch are configured with IP address inform
 	***Switch1(config-if)#ip address 192.168.1.2 255.255.255.0***
 
 3. Configure the IP address assigned to the FastEthernet 0/0 interface on Router4 as the default gateway for Switch1. \
-	***Switch1(config)#ip default-gateway 192.168.1.1***\
+	***Switch1(config)#ip default-gateway 192.168.1.1***
 
 4. Configure the appropriate IP address, subnet mask and default gateway on PC1. \
 	***C:>ipconfig /ip 192.168.1.252 255.255.255.0***\
@@ -49,12 +49,12 @@ Also, ping Router4 to test connectivity\
 	***Switch1(config-line)#password cisco***\
 	***Switch1(config-line)#login local***\
    	***Switch1(config-line)#exit***\
-	***Switch1(config)#service password-encryption***\
+	***Switch1(config)#service password-encryption***
 
 2.  Configure all unused ports as access ports and disable them:\
 	***Switch1(config)#interface range fastethernet 0/3 - 12***\
 	***Switch1(config-if-range)#switchport mode access***\
-	***Switch1(config-if-range)#shutdown***\ 
+	***Switch1(config-if-range)#shutdown***
 
 ## Step 3: Configure Port Security on Switch1
 
@@ -69,7 +69,7 @@ Also, ping Router4 to test connectivity\
 	***Switch1(config-if)#switchport port-security maximum 1***\
 	***Switch1(config-if)#switchport port-security mac-address 000C.7988.2251***
 
-3. Off the three modes in port-security (Protect, Restrict and Shutdown), the shutdown mode is enabled by default when port-security is enabled. If another device attempts to connect to the network via the FastEthernet 0/2 interface, the port will be shut down. At last, re-enable the interface by issuing no shutdown command: \
+3. Out of three modes in port-security (Protect, Restrict and Shutdown), the shutdown mode is enabled by default when port-security is enabled. If another device attempts to connect to the network via the FastEthernet 0/2 interface, the port will be shut down. At last, re-enable the interface by issuing no shutdown command: \
 	***Switch1(config-if)#switchport port-security violation shutdown***\
   	***Switch1(config-if)#no shutdown***
 
